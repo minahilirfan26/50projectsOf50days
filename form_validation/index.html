@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <title>From_validation</title>
+</head>
+<body>
+    <div id="form-container">
+        <h2>login</h2>
+        <form action="" onsubmit="return validateForm()">
+            <input type="text" placeholder="User Name" id="userName"><br>
+            <p id="userError" class="error"></p>
+
+            <input type="password" placeholder="Password" id="password"><br>
+            <p id="passError" class="error"></p>
+
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
