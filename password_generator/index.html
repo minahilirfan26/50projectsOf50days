@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="passwordBox">
+            <h3>Password Generator</h3>
+            <div class="password-value-container">
+                <p id="password"></p>   
+                <i class="far fa-clone" onclick="copyPassword()"></i>
+            </div>
+            <div class="option-container">                
+                <div class="option">
+                    <label for="length">Total Length</label>
+                    <input type="number" name="" id="length" min="4" max="20">
+                </div>
+                <div class="option">
+                    <label for="symbol">Include Symbol</label>
+                    <input type="checkbox" name="" id="symbol">
+                </div>
+                <div class="option">
+                    <label for="number">Include Number</label>
+                    <input type="checkbox" name="" id="number">
+                </div>
+                <div class="option">
+                    <label for="upperCase">Include upper case</label>
+                    <input type="checkbox" name="" id="upperCase">
+                </div>
+                <div class="option">
+                    <label for="lowerCase">Include lower case</label>
+                    <input type="checkbox" name="" id="lowerCase">
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="generatePassword" onclick="generatePassword()">Generate</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
